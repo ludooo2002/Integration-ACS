@@ -22,26 +22,24 @@
         display: none;
     }
 
+    /* -------------------------------------------- */
+    /* ---------- DEFINITION DES VARIABLES -------- */
+    /* -------------------------------------------- */
 
     :root 
     {
-        /* -------------------------------------------- */
-        /* ---------- DEFINITION DES COULEURS --------- */
-        /* -------------------------------------------- */
-
         --premiere-couleur:white;
         --deuxieme-couleur:black;
         --troisieme-couleur:#a10323;
-
-        /* -------------------------------------------- */
-        /* ---------- PADDING SECTIONS ---------------- */
-        /* -------------------------------------------- */
 
         --lg-padding-section:50px 5%;
         --md-padding-section:50px 20px;  
     }
 
-    /* --- EXEMPLE UTILISATION VARIABLE --- */
+    /* -------------------------------------------- */
+    /* ---------- EXEMPLE UTILISATION VARIABLE ---- */
+    /* -------------------------------------------- */
+
     .premiere
     {
         color:var(--premiere-couleur);
@@ -198,6 +196,12 @@
         text-overflow: ellipsis;
     }
 
+    .scrolltop
+    {
+        width:40px; 
+        cursor:pointer;
+    }
+
     /* -------------------------------------------------------------------------------------------------------------------------- */
     /* ---------- ESPACE OCCUPE PAR LE SITE DANS LE CONTAINER PRINCIPALE -------------------------------------------------------- */
     /* -------------------------------------------------------------------------------------------------------------------------- */
@@ -297,13 +301,14 @@
 
     footer .footer-icon .gly-rotate-45:hover 
     {
-        filter: progid: DXImageTransform.Microsoft.BasicImage(rotation=0.5);
+        filter: progid:DXImageTransform.Microsoft.Microsoft.BasicImage(rotation=0.5);
         -webkit-transform: rotate(45deg);
         -moz-transform: rotate(45deg);
         -ms-transform: rotate(45deg);
         -o-transform: rotate(45deg);
         transform: rotate(45deg);
         display: inline-block;
+        overflow:auto;
     }
 
     @media (max-width: 991.98px) 
@@ -638,7 +643,7 @@
         top: 0;
         width: 100%; /* Full width */
         height: 100%; /* Full height */
-        overflow: none; /* Enable scroll if needed */
+        overflow: hidden; /* Enable scroll if needed */
         background-color: rgb(0,0,0); /* Fallback color */
         background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
         cursor:pointer;
